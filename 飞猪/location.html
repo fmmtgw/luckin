@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum=1.0,minimum=1.0">
+    <title>Train ticket</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/check.js"></script>
+    <link rel="stylesheet" href="css/location.css">
+</head>
+<body>
+<!-- 大盒子 -->
+<div id="big">
+    <!-- 顶部搜索框 -->
+    <div class="search-bar">
+        <div id="hz">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC2ElEQVRYR8VXXW7aQBCesYDX0BMETtD0BIUTlJ6gILEWb4UThJwgPKJZSyUnKDlByAmSnKDOCdq82sJTjbWLNsZ/UET3BbGe3fn8zd9nhIo1HA7brVbrCwAMmLmNiD1zJGTmEBGfkyTZBEFwX3VX3nMsOjSZTDrb7fYaEYd1LmbmP4g4JaK7OvbWJheAUkqc3iJiO3PZizhy9jqIeJmxEWa+aq2f6wDZA+D7/goAvtnDzPwKAPM4jter1cp1npoopa4QcQAAUwC4kD3DxoiI1lUg3gHIOgeAGREtqi6R5yZXxHYHPkmSfhAEm7LzOwBCOyL+MMZvzNyrS6PrwPf9OQBcWyYAoF92TwrAJNyTjTkzfzrGuQWilFog4ncDYqO17hexkALIUF+b9jJqlVIbRPwsNmWhQBO73wbtq9a6UyfmVTYmOZ/Mvfdaa0nUvYVu7Jl5pLWWKjjJUkqtEVGaGERR9CGvigRApdGxaOq8nACwsXohoqtjneWdG4/HPc/zHsyzGyKSCnm30Pd9NnF61FrbPn8yHPZ+APi/AJg5NxElBDLRLpn55Ay4FVbIgJMDIRF1T8Y9ANTKgUzX+qcOmAXvtuWiZiRJKA3iZ1mmHsuKDS8AvBFRdrSn19pWLGP2QsZoHMfdvIZxKIjMcLsjolxhYwHILL815bjSWo8OdejaS/I1m81fdrh5ntddLpdhbiu2mw5dsnX0QDLOHxDRNrXc+rd+XT0gykbEQ6pqAGBBRLNDmMg6FzVVNdyyishNSJFWAmhWRxsU6ciqAbenCU3tipazTAgJ8n8tMlxr/Sgb5m0/GpkuCbYb4/LmrlgtA1GkiiV+ompSQXHAEik3lZGeqQJhM3fUF34XiFNhQ7S+nekVQG6iKFq4JVwHRCkA69DQPUBES7P8hvJF1Gg0wqISk/NVIGoBOCAEuaZlIM4CoIyJswEoAnFWAFkQokHODsCCkFbCzPO/HPS5Gvw3uksAAAAASUVORK5CYII=" alt="你猜是个啥?">
+            <input id="sck" type="text" value placeholder="中文/拼音/首字母">
+            <input id="sck-1" type="button" value="取消">
+        </div>
+    </div>
+    <!-- 主体部分 -->
+    <div class="subject">
+        <!-- 右上角跳转链接 -->
+        <div class="jump">
+            <ul>
+                <li><a href="#B">B</a></li>
+                <li><a href="#C">C</a></li>
+                <li><a href="#D">D</a></li>
+                <li><a href="#F">F</a></li>
+                <li><a href="#G">G</a></li>
+                <li><a href="#H">H</a></li>
+                <li><a href="#J">J</a></li>
+                <li><a href="#K">K</a></li>
+                <li><a href="#L">L</a></li>
+                <li><a href="#N">N</a></li>
+                <li><a href="#Q">Q</a></li>
+                <li><a href="#S">S</a></li>
+                <li><a href="#T">T</a></li>
+                <li><a href="#W">W</a></li>
+                <li><a href="#X">X</a></li>
+                <li><a href="#Z">Z</a></li>
+            </ul>
+        </div>
+        <!-- 中间内容 -->
+        <div class="main">
+            <ul>
+                <li class="ksa" id="B"><span>B</span></li>
+                <li class="nme">北京</li>
+                <li class="ksa" id="C"><span>C</span></li>
+                <li class="nme">长春</li>
+                <li class="nme">成都</li>
+                <li class="nme">重庆</li>
+                <li class="nme">长沙</li>
+                <li class="ksa" id="D"> <span>D</span></li>
+                <li class="nme">大连</li>
+                <li class="ksa" id="F"> <span>F</span></li>
+                <li class="nme">福州</li>
+                <li class="ksa" id="G"> <span>G</span></li>
+                <li class="nme">广州</li>
+                <li class="ksa" id="H"> <span>H</span></li>
+                <li class="nme">哈尔滨</li>
+                <li class="nme">合肥</li>
+                <li class="nme">海口</li>
+                <li class="nme">杭州</li>
+                <li class="ksa" id="J"> <span>J</span></li>
+                <li class="nme">济南</li>
+                <li class="ksa" id="K"> <span>K</span></li>
+                <li class="nme">昆明</li>
+                <li class="ksa" id="L"> <span>L</span></li>
+                <li class="nme">洛阳</li>
+                <li class="nme">兰州</li>
+                <li class="ksa" id="N"> <span>N</span></li>
+                <li class="nme">南昌</li>
+                <li class="nme">南京</li>
+                <li class="nme">南宁</li>
+                <li class="ksa" id="Q"> <span>Q</span></li>
+                <li class="nme">青岛</li>
+                <li class="ksa" id="S"> <span>S</span></li>
+                <li class="nme">上海</li>
+                <li class="nme">沈阳</li>
+                <li class="nme">深圳</li>
+                <li class="nme">苏州</li>
+                <li class="ksa" id="T"> <span>T</span></li>
+                <li class="nme">天津</li>
+                <li class="nme">太原</li>
+                <li class="ksa" id="W"> <span>W</span></li>
+                <li class="nme">武汉</li>
+                <li class="nme">乌鲁木齐</li>
+                <li class="ksa" id="X"> <span>X</span></li>
+                <li class="nme">西安</li>
+                <li class="ksa" id="Z"> <span>Z</span></li>
+                <li class="nme">郑州</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<script src="js/location.js"></script>
+</body>
+</html>

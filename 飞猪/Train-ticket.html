@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum=1.0,minimum=1.0">
+    <title>Train ticket</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="css/Train-ticket.css">
+</head>
+<body>
+<!-- 大盒子 -->
+<div id="box">
+    <div></div>
+    <!-- 头部选项 -->
+    <div class="Options">
+        <ul>
+            <li>火车票</li>
+            <li>汽车票</li>
+        </ul>
+        <!-- 这是两个杠杠 -->
+        <ul>
+            <li></li>
+            <li></li>
+        </ul>
+        <!-- 跳转导航 -->
+        <div class="Jump">
+            <div class="Jump-1">
+                <a href="https://f.m.taobao.com/wow/z/pcraft/act/wupr?wh_biz=tm&wh_weex=true&wh_pid=flight%2Ftrain-notice12306&program_type=H5&ttid=201300%40travel_h5_3.1.0&spm=181.7406756.10840052.tip&scm=&_preProjVer=1.21.0">
+                支付宝12306小程序火车票订单查询指引
+                    <img src="img/右尖括号.png" alt="">
+                </a> <span> | </span>
+                <img id="Turn-off" src="img/下载%20(3).png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 中间内容 -->
+    <div class="outset">
+        <!-- 选择地点 -->
+        <ul>
+            <li id="outset">出发</li>
+            <li><img id="ring-1" src="img/蓝色的小圈.png" alt=""></li>
+            <li id="arrive">到达</li>
+        </ul>
+        <br><br>
+        <!-- 选择出发时间 -->
+        <p id="while"></p>
+        <p>
+            <label><input class="tui-checkbox "  value="Item 1" type="checkbox" name="checkbox">学生票查询</label>
+            <label><input class="tui-checkbox " value="Item 1" type="checkbox" name="checkbox">只看高铁动车</label>
+        </p>
+        <!-- 开始搜索 -->
+        <input type="button" value="开始搜索">
+        <!-- 帮助小导航 -->
+        <div class="help">
+
+        </div>
+    </div>
+    <!-- 租车 and 接送 -->
+    <div class="end">
+        <a href="https://market.m.taobao.com/app/trip/h5-vehicle-new/pages/home/index.html?vehicleType=rent-car&program_type=H5&ttid=201300%40travel_h5_3.1.0&spm=181.7406756.10840052.nav0&scm=&_preProjVer=1.21.0&_projVer=1.2.2">
+            <p>飞猪租车</p>
+            <p>信用免押</p>
+        </a>
+        <a href="https://market.m.taobao.com/app/trip/h5-vehicle-new/pages/home/index.html?vehicleType=train-transfer&program_type=H5&ttid=201300%40travel_h5_3.1.0&spm=181.7406756.10840052.nav1&scm=&_preProjVer=1.21.0&_projVer=1.2.2">
+            <p>接送站</p>
+            <p>提前约接送机</p>
+        </a>
+    </div>
+    <!-- 蚂蚁森林能量 -->
+    <p class="forest">
+        <img src="img/绿色.png" alt=""><span>购票获得蚂蚁森林能量</span>
+    </p>
+</div>
+<script src="js/Train%20ticket.js"></script>
+</body>
+</html>
